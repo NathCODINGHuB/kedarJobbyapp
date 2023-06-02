@@ -1,0 +1,111 @@
+* {
+  font-family: 'Roboto';
+}
+
+.HeaderContainer {
+  height: 15vh;
+  background-color: #272727;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.HeaderContentContainer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+.logoContainer {
+  flex-shrink: 1;
+  min-width: 80px;
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  width: 80%;
+}
+.deskTopLinkContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  padding: 0px;
+  margin-left: auto;
+  align-self: center;
+}
+.Home {
+  margin-right: 8px;
+  font-weight: 500;
+}
+.Jobs {
+  margin-left: 8px;
+  font-weight: 500;
+}
+.Link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #6366f1;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 8px 18px 8px 18px;
+}
+
+.mobileButtonsContainer {
+  display: flex;
+  flex-direction: row;
+}
+.mobileLogOutBn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  color: #ffffff;
+  text-align: center;
+}
+.icons {
+  font-size: 32px;
+}
+.hi {
+  margin-right: 25px;
+}
+
+.li {
+  margin-left: 25px;
+}
+@media screen and (max-width: 768px) {
+  .HeaderContainer {
+    height: 10vh;
+  }
+  .logoContainer {
+    width: 120px;
+  }
+  .DesktopLogoutBnContainer {
+    display: none;
+  }
+  .deskTopLinkContainer {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobileButtonsContainer {
+    display: none;
+  }
+  .DesktopLogoutBnContainer {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,19 @@
+.SimilarJobItem {
+  background-color: #202020;
+  border-radius: 9px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+.DescriptionDetail {
+  font-size: 17px;
+}
+.sim {
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .SimilarJobItem {
+    width: 30%;
+    margin-right: 20px;
+  }
+}
